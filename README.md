@@ -84,35 +84,35 @@ dmesg | tail -10
 ### 3. Demo with Screenshots
 ## Screenshot 1: Multi-container supervision
 ## What it shows: Two containers (alpha and beta) running under one supervisor process
-[Screenshot 1]!(./Demo/OSJP-1.jpeg)
+![Screenshot 1](./Demo/OSJP-1.jpeg)
 
 ## Screenshot 2: Metadata tracking
 ## What it shows: Output of `engine ps` command showing container IDs, PIDs, STATE, EXIT code, and memory limits
-[Screenshot 2]!(./Demo/OSJP-2.png)
+![Screenshot 2](./Demo/OSJP-2.png)
 
 ## Screenshot 3: Bounded-buffer logging
 ## What it shows: Log file contents captured through logging pipeline (producer-consumer buffer)
-[Screenshot 3]!(./Demo/OSJP-3.png)
+![Screenshot 3](./Demo/OSJP-3.png)
 
 ## Screenshot 4: CLI and IPC
 ## What it shows: CLI command `engine start test123` and supervisor responding with "IPC Working"
-[Screenshot 4]!(./Demo/OSJP-4.png)
+![Screenshot 4](./Demo/OSJP-4.png)
 
 ## Screenshot 5: Soft-limit warning
 ## What it shows: `dmesg` output showing soft-limit warning when container exceeds 20 MiB
-[Screenshot 5]!(./Demo/OSJP-5.jpeg)
+![Screenshot 5](./Demo/OSJP-5.jpeg)
 
 ## Screenshot 6: Hard-limit enforcement
 ## What it shows: `dmesg` output showing container killed after exceeding 40 MiB hard limit
-[Screenshot 6]!(./Demo/OSJP-6.jpeg)
+![Screenshot 6](./Demo/OSJP-6.jpeg)
 
 ## Screenshot 7: Scheduling experiment
 ## What it shows: `ps` output with `R<+` (high priority) and `RN+` (low priority) CPU usage difference
-[Screenshot 7]!(./Demo/OSJP-7.png)
+![Screenshot 7](./Demo/OSJP-7.png)
 
 ## Screenshot 8: Clean teardown
 ## What it shows: `ps aux | grep defunct` showing no zombie processes after shutdown
-[Screenshot 8]!(./Demo/OSJP-8.jpeg)
+![Screenshot 8](./Demo/OSJP-8.jpeg)
 
 ### 4. Engineering Analysis
 ## 1. Isolation Mechanisms
